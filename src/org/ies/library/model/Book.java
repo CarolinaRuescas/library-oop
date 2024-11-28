@@ -15,7 +15,7 @@ public class Book {
         this.year = year;
         this.authors = authors;
     }
-
+    // este es un tipo de método de búsqueda
     public  boolean hasAuthor(String nif){
         for (Author author : authors){
             if (author.getNif().equals(nif)){
