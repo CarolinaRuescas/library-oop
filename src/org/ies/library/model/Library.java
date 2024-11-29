@@ -13,13 +13,13 @@ public class Library {
     }
 
     // hasBook(isbn): dado un ISBN devuelve si el libro existe en la biblioteca
-    public Book hasBook(String isbn) {
+    public boolean hasBook(String isbn) {
         for (Book book : books) {
             if (book.getIsbn().equals(isbn)) {
-                return book;
+                return true;
             }
         }
-        return null;
+        return false;
     }
 
     // esta es la forma de hacerlo largo, pero en la de abajo se hace de tal forma que utilizamos el método
@@ -77,7 +77,6 @@ public class Library {
         }
         return null;
     }
-
 
     public String getName() {
         return name;
